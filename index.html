@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>magape trading software</title>
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #2a2a72;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    /* Revolving World Atlas */
+    .world-atlas {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 2px;
+      height: 30px;
+      animation: revolve 6s infinite linear;
+    }
+
+    @keyframes revolve {
+      0% {
+        transform: rotateY(0deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    /* Animated Main Title */
+    .animated-title {
+      font-size: 2.5rem;
+      color: white;
+      animation: titleAnimation 5s infinite alternate;
+    }
+
+    @keyframes titleAnimation {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+    }
+
+    /* Scrolling Image Bar */
+    .scrolling-images {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-top: 10px;
+    }
+
+    .scrolling-images img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Social Media Buttons */
+    .social-media {
+      display: flex;
+      gap: 10px;
+      position: absolute;
+      right: 20px;
+      top: 80px;
+    }
+
+    .social-media a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-media a:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .social-media img {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Floating Text Bar (Motivational Quotes) */
+    .floating-text-bar {
+      position: absolute;
+      bottom: 70px;
+      width: 100%;
+      text-align: center;
+      color: deep blue;
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      padding: 10px 0;
+      font-size: 1.5rem;
+      animation: fadeInOut 10s infinite;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      10%, 90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    /* Comments Section */
+    .comments {
+      margin: 30px auto;
+      padding: 20px;
+      width: 80%;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      border-radius: 10px;
+    }
+
+    .comment-box {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+      color: sky blue;
+      border-radius: 5px;
+    }
+
+    }
+
+    /* Flag Section */
+    .flags {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .flags img {
+      width: 50px;
+      height: 30px;
+      margin: 0 10px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #2a2a72;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <h1 class="animated-title">magape trading software</h1>
+  </div>
+  <div class="world-atlas">
+    <img src="soccer-player.png" alt="Revolving World Atlas">
+  </div>
+</header>
+
+<!-- Scrolling Image Bar -->
+<div class="scrolling-images">
+  <img src="image1.jpg" alt="School 1">
+  <img src="image2.jpg" alt="School 2">
+  <img src="image3.jpg" alt="School 3">
+  <img src="image4.jpg" alt="School 4">
+<img src="image1.jpg" alt="School 5">
+  <img src="image5.jpg" alt="School 6">
+  <img src="image11.jpg" alt="School 7">
+  <img src="image7.jpg" alt="School 8">
+<img src="image8.jpg" alt="School 9">
+  <img src="image9.jpg" alt="School 10">
+  <img src="image10.jpg" alt="School 11">
+  <img src="image11.jpg" alt="School 12">
+  <!-- Add more images as needed -->
+</div>
+
+<!-- Social Media Buttons -->
+<div class="social-media">
+  <a href="https://web.facebook.com/vflprediction/?viewas=100000686899395" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+  <a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+  <a href="https://wa.me/08138536375" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+  <a href="https://www.youtube.com" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a>
+</div>
+
+<!-- Comments Section -->
+<div class="comments">
+  <h2>What People Say About Us</h2>
+  <div class="comment-box">"Great tools for soccer beting!"</div>
+  <div class="comment-box">"Their copy trading pattern program is outstanding!"</div>
+  <div class="comment-box">"My friend gained much from the trading programs!"</div>
+</div>
+
+<!-- Flag Section -->
+<div class="flags">
+  <img src="american-flag.png" alt="American Flag">
+  <img src="england-flag.png" alt="England Flag">
+  <img src="nigerian-flag.png" alt="Nigerian Flag">
+</div>
+
+</head>
+<body>
+
+<h2>DRAWS-SIGNAL</h2>
+
+<!-- Embed the Google Sheet -->
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTGjBQkPNZeH0D_YgS-xmKHP0eO8sU4q4DOtD8Rp-OGVwVkWAJCJm7LVGZAgyjr1A/pubhtml?gid=1184382128&single=true"
+        width="80%" height="100">
+</iframe>
+
+</body>
+</head>
+
+</html>
+
+</div>
+<!-- Special Summer Program Section -->
+<div class="comments">
+  <h2>TRADE BY HUNTING PATTERNS</h2>
+  <ul>
+    <li>ENGLAND PREMIER LEAGUE DRAWS</li>
+    <li>ENGLANND PREMIER OVER 2.5 AND UNDER 2.5</li>
+    <li>ENGLANND PREMIER OVER 3.5 AND UNDER 3.5</li>
+    <li>ENGLANND PREMIER OVER 1.5 AND UNDER 1.5</li>
+    <li>VIRTUAL SOCEER</li>
+    <li>HOME WINS</li>
+  </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Google Sheet</title>
+</head>
+<body>
+
+<h2>DRAWS-SIGNAL</h2>
+
+<!-- Embed the Google Sheet -->
+<iframe src="https://docs.google.com/spreadsheets/d/1LeZ730cPg0vRtHZ76kldUQvmKLrMhyVf/pubhtml?gid=881505809&single=true" 
+        width="100%" height="600">
+</iframe>
+
+</body>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 MAGAPE SOFTWARES. All rights reserved.</p>
+</footer>
